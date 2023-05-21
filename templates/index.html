@@ -1,8 +1,48 @@
 <!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
+    <title>Films</title>
+    <style>
+        body{
+            background-color: #000000;
+        }
+        .Title{
+            color: darkgreen;
+        }
+        li{
+            color: chocolate;
+        }
+        .Photo{
+            width: 480px;
+            height: 720px;
+        }
+        .container{
+            background-color: #1f1f1f;
+            width: 720px;
+            margin: 0 auto;
+        }
+        .Description{
+            color: darkblue;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-
 <body>
-    <p><a href="https://t.me/KryshchyshynPavlo"> Дзюба носить каву</p>
+    <h1>List of Films</h1>
+    {% for film in films %}
+        <div class="container">
+            <h2 class="Title" >{{ film.title }}</h2>
+            <div class="Description">{{ film.description }}</div>
+            <img class="Photo" src={{film.image_url}}>
+            </ul>
+            {{ film.trailer_url }}
+            <p>Жанри: </p>
+            <ul>
+            {% for genre in film.genre %}
+                <li class="genres">{{ genre }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
 </body>
+</html>
