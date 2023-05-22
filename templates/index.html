@@ -4,36 +4,35 @@
     <title>Films</title>
     <style>
         body{
-            background-color: #000000;
+            background-color: #0e1621;
         }
         .Title{
-            color: darkgreen;
+            color: white;
         }
         li{
-            color: chocolate;
+            color: whitesmoke;
         }
         .Photo{
             width: 480px;
             height: 720px;
         }
         .container{
-            background-color: #1f1f1f;
+            background-color: #182533;
             width: 720px;
             margin: 0 auto;
         }
-        .Description{
-            color: darkblue;
+        .DescriptionHolder{
+            background-color: #1a4167;
             margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <h1>List of Films</h1>
     {% for film in films %}
         <div class="container">
             <h2 class="Title" >{{ film.title }}</h2>
-            <div class="Description">{{ film.description }}</div>
             <img class="Photo" src={{film.image_url}}>
+            <div class="DescriptionHolder">{{ film.description }}</div>
             </ul>
             {{ film.trailer_url }}
             <p>Жанри: </p>

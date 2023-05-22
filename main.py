@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    with open('films.json') as file:
+    with open('database/films.json') as file:
         data = json.load(file)
 
     return render_template('index.html', films=data)
