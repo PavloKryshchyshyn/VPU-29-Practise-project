@@ -1,0 +1,22 @@
+body{
+    background-color: #0e1621;
+}
+.Title{
+    color: white;
+}
+li{
+    color: whitesmoke;
+}
+.Photo{
+    width: 480px;
+    height: 720px;
+}
+.container{
+    background-color: #182533;
+    width: 720px;
+    margin: 0 auto;
+}
+.DescriptionHolder{
+    background-color: #1a4167;
+    margin: 0 auto;
+}
