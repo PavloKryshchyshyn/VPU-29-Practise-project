@@ -18,6 +18,11 @@ li{
     margin: 0 auto;
 }
 .DescriptionHolder{
-    background-color: #1a4167;
+    color: #dddddc;
+    text-shadow: #dddddc5d;
     margin: 0 auto;
+}
+.genre{
+    color: #dddddc;
+    text-shadow: #dddddc5d;
 }

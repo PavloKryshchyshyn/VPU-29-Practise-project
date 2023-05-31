@@ -1,7 +1,7 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-16">
+    <meta charset="UTF-8">
     <title>Films</title>
     <link rel="stylesheet" href='/static/styles.css' />
 </head>
@@ -13,7 +13,7 @@
             <img class="Photo" src={{film.image_url}}>
             <div class="DescriptionHolder">{{ film.description }}</div>
             </ul>
-            <p>Жанри: </p>
+            <p class="genre">Жанри: </p>
             <ul>
             {% for genre in film.genre %}
                 <li class="genres">{{ genre }}</li>
