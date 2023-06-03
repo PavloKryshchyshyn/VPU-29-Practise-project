@@ -5,9 +5,7 @@ body{
     color: white;
     margin-bottom: 2px;
     margin-top: 8px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    text-align: center;
 }
 li{
     color: whitesmoke;
