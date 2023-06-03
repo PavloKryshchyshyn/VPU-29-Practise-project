@@ -10,16 +10,18 @@
     {% for film in films %}
         <div class="container">
             <h2 class="Title" >{{ film.title }}</h2>
-            <img class="Photo" src={{film.image_url}}>
-            <div class="DescriptionHolder">{{ film.description }}</div>
+            <div class="photoAndDesc">
+                <img class="Photo" src={{film.image_url}} alt={{film.title}}>
+                <div class="DescriptionHolder">{{ film.description }}</div>
+            </div>
             </ul>
-            <p class="genre">Жанри: </p>
+                <p class="genre">Жанри: </p>
             <ul>
-            {% for genre in film.genre %}
-                <li class="genres">{{ genre }}</li>
-            {% endfor %}
+                {% for genre in film.genre %}
+                    <li class="genres">{{ genre }}</li>
+                {% endfor %}
             </ul>
-            <iframe width="560" height="315" src={{trailer_url}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="YTvid" width="580" height="315" src={{film.trailer_url}} title={{film.title}} frameborder="0" allowfullscreen></iframe>
         </div>
     {% endfor %}
 </body>
