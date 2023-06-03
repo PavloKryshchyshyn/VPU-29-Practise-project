@@ -3,14 +3,54 @@ body{
 }
 .Title{
     color: white;
-}
-li{
-    color: whitesmoke;
-}
+
+    margin-bottom: 2px;
+    margin-top: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 .Photo{
+    width: 320px;
+    height: 480px;
+    margin-left: 10px;
+    margin-top: 47px;
+    border-radius: 8px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.photoAndDesc{
+    align-items: center;
+    display: flex;
+}
+.container{
+    background-color: #182533;
+    width: 640px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+.DescriptionHolder{
+    background-color: #394552;
+    border-radius: 6px;
+    margin-right: 8px;
+    color: #dddddc;
+    text-shadow: #dddddc5d;
+    margin-left: 10px;
+}
+.genre{
+    margin-left: 10px;
+    color: #dddddc;
+    text-shadow: #dddddc5d;
+}
+.YTvid{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 12px;
+    border-radius: 3px;
     width: 480px;
     height: 720px;
 }
+  
 .container{
     background-color: #182533;
     width: 720px;
