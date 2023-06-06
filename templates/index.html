@@ -7,22 +7,31 @@
 </head>
 
 <body>
-    {% for film in films %}
-        <div class="container">
-            <h2 class="Title" >{{ film.title }}</h2>
-            <div class="photoAndDesc">
-                <img class="Photo" src={{film.image_url}} alt={{film.title}}>
-                <div class="DescriptionHolder">{{ film.description }}</div>
-            </div>
-            </ul>
-                <p class="genre">Жанри: </p>
-            <ul>
-                {% for genre in film.genre %}
+{% for film in films %}
+    <div class="container">
+        <h2 class="Title" >
+            {{ film.title }}
+        </h2>
+        <div class="photoAndDesc">
+            <img class="Photo" src={{film.image_url}} alt={{film.title}}>
+            <div class="descAndGenre">
+                <div class="DescriptionHolder">
+                    Опис: {{ film.description }}
+                </div>
+            <div class="genresContainr">
+                <p class="genre">
+                    Жанри: 
+                </p>
+                <ul>
+                    {% for genre in film.genre %}
                     <li class="genres">{{ genre }}</li>
-                {% endfor %}
-            </ul>
-            <iframe class="YTvid" width="580" height="315" src={{film.trailer_url}} title={{film.title}} frameborder="0" allowfullscreen></iframe>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-    {% endfor %}
+        </div>
+            <iframe class="YTvid" width="580" height="315" src={{film.trailer_url}} title={{film.title}} frameborder="0" allowfullscreen></iframe>
+    </div>
+{% endfor %}
 </body>
 </html>
