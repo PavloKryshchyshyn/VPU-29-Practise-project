@@ -1,15 +1,18 @@
 body{
     background-color: #0e1621;
 }
+
 .Title{
     color: white;
     margin-bottom: 2px;
     margin-top: 8px;
     text-align: center;
 }
+
 li{
     color: whitesmoke;
 }
+
 .Photo{
     width: 320px;
     height: 480px;
@@ -19,10 +22,12 @@ li{
     margin-bottom: 7px;
     cursor: pointer;
 }
+
 .photoAndDesc{
     align-items: center;
     display: flex;
 }
+
 .container{
     background-color: #182533;
     width: 640px;
@@ -30,25 +35,29 @@ li{
     margin-top: 1.4%;
     border-radius: 12px;
 }
+
 .DescriptionHolder{
-    background-color: #394552;
+    background-color: #0e1621;
     border-radius: 6px;
     margin-right: 8px;
     color: #dddddc;
     text-shadow: #dddddc5d;
     margin-left: 10px;
 }
+
 .genre{
     margin-left: 10px;
     color: #dddddc;
     text-shadow: #dddddc5d;
 }
+
 .YTvid{
     margin-top: 10px;
     margin-left: 30px;
     margin-bottom: 12px;
     border-radius: 3px;
 }
+
 .descAndGenre{
     display: flex;
     flex-direction: column;
